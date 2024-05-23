@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Code Stories</string>
+
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <string name="login">LOGIN</string>
+    <string name="login_title">Unlock your creativity with</string>
+    <string name="login_description">Welcome back you’ve been missed!</string>
+
+    <string name="sign_up">SIGN UP</string>
+    <string name="signup_title">Join %1$s today and unleash your storytelling potential!</string>
+    <string name="signup_description">Create an account so you can explore stories from coders</string>
+
+    <string name="login_to_signup">Don\'t have an account yet? %1$s and start sharing your stories with us!</string>
+    <string name="signup_now">Sign up now</string>
+    <string name="signup_to_login">Already have an account? %1$s and continue your storytelling journey with us!</string>
+    <string name="login_now">Log in now</string>
+
+    <string name="empty_name">Please enter your name address to proceed.</string>
+    <string name="empty_email">Please enter your email address to proceed.</string>
+    <string name="empty_password">Please enter your password to proceed.</string>
+
+    <string name="register_success">Congratulations! Your account has been successfully created.</string>
+    <string name="register_message">You can now log in and start exploring our platform. \n Press \'Continue\' to proceed to the login page.</string>
+    <string name="continue_login">Continue</string>
+
+    <string name="s_story">%1$s \'s story</string>
+    <string name="add_new_story">Add new story</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <string name="language">Language</string>
+    <string name="description">Description</string>
+    <string name="upload">Upload</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+
+    <!-- Success condition -->
+    <string name="successfully_logged_in">You\'ve successfully logged in. Welcome back!</string>
+    <string name="successfully_logged_out">You have successfully logged out. See you later!</string>
+    <string name="permission_request_granted">Permission request granted.</string>
+    <string name="successfully_take_pictures">Successfully take pictures.</string>
+
+    <!-- Failed Condition  -->
+    <string name="not_available">Not available.</string>
+    <string name="story_not_available">Story not available.</string>
+    <string name="failed_to_load_data">Failed to load data.</string>
+    <string name="no_media_selected">No media selected.</string>
+    <string name="permission_request_denied">Permission request denied.</string>
+    <string name="failed_to_show_camera">Failed to show camera.</string>
+    <string name="failed_to_take_pictures">Failed to take pictures.</string>
+    <string name="please_select_an_image_first">Please select an image first.</string>
+    <string name="passwords_must_have_at_least_8_characters">Passwords must have at least 8 characters.</string>
+    <string name="invalid_email_format">Invalid email format.</string>
+
+    <!-- Content Description -->
+    <string name="navigation_and_actions">Navigation and actions</string>
+    <string name="upload_new_story">Upload new story</string>
+    <string name="no_stories_available">No stories available</string>
+    <string name="list_of_stories">List of stories</string>
+    <string name="preview_of_selected_image">Preview of selected image</string>
+    <string name="open_gallery_to_select_image">Open gallery to select image</string>
+    <string name="take_photo_with_camera">Take photo with camera</string>
+    <string name="enter_description_for_the_image">Enter description for the image</string>
+    <string name="upload_the_selected_image">Upload the selected image</string>
+    <string name="camera_preview">Camera preview</string>
+    <string name="capture_image">Capture image</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="story_image">Story image</string>
+    <string name="story_name">Story name</string>
+    <string name="story_date">Story date</string>
+    <string name="story_description">Story description</string>
+    <string name="title_of_login">Login title</string>
+    <string name="description_of_login">Login description</string>
+    <string name="email_input_field">Email input field</string>
+    <string name="password_input_field">Password input field</string>
+    <string name="login_button">Login button</string>
+    <string name="register_button">Register button</string>
+    <string name="title_of_signup">Sign up title</string>
+    <string name="description_of_signup">Sign up description</string>
+    <string name="sign_up_button">Sign up button</string>
+    <string name="change_language">Change language</string>
+    <string name="welcome_main">Find your friends on Code Stories</string>
+    <string name="welcome_seccond">Explore code stories find interesting stories from coder friends</string>
+    <string name="copyright">Code Stories 2024</string>
+</resources>
