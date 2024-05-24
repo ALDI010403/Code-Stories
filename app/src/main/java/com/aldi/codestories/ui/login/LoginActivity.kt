@@ -26,19 +26,17 @@ import com.aldi.codestories.R
 import com.aldi.codestories.ViewModelFactory
 import com.aldi.codestories.data.local.UserPreference
 import com.aldi.codestories.databinding.ActivityLoginBinding
+import com.aldi.codestories.repository.Result
 import com.aldi.codestories.ui.main.MainActivity
 import com.aldi.codestories.ui.register.RegisterActivity
 import com.aldi.codestories.viewmodel.login.LoginViewModel
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
-import com.aldi.codestories.repository.Result
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-
     private lateinit var userPreference: UserPreference
-
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(SESSION)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,7 +81,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupAnimation() {
-
         val loginDescription = ObjectAnimator.ofFloat(binding.loginDescription, View.ALPHA, 1f).setDuration(100)
         val edEmail = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val edPassword = ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(100)
@@ -109,7 +106,6 @@ class LoginActivity : AppCompatActivity() {
             loginTitle.length + 1 + codestories.length,
             SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE
         )
-
     }
 
     private fun setupButton() {

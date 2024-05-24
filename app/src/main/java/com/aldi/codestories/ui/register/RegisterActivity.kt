@@ -32,7 +32,6 @@ import com.aldi.codestories.repository.Result
 class RegisterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegisterBinding
-
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(SESSION)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +62,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setupAnimation() {
-
         val signupDescription = ObjectAnimator.ofFloat(binding.signupDescription, View.ALPHA, 1f).setDuration(100)
         val edName = ObjectAnimator.ofFloat(binding.nameEditTextLayout, View.ALPHA, 1f).setDuration(100)
         val edEmail = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(100)
@@ -87,7 +85,6 @@ class RegisterActivity : AppCompatActivity() {
             spannable.indexOf(getString(R.string.app_name)) + getString(R.string.app_name).length,
             SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE
         )
-
     }
 
     private fun setupButton() {

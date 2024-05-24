@@ -18,7 +18,6 @@ class DetailStoryActivity : AppCompatActivity() {
         binding = ActivityDetailStoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        @Suppress("DEPRECATION")
         val result = intent.getParcelableExtra<ListStoryItem>(EXTRA_RESULT)
         if (result != null) {
             setupToolbar(result)
@@ -32,11 +31,8 @@ class DetailStoryActivity : AppCompatActivity() {
     private fun setupToolbar(item: ListStoryItem) {
         with(binding) {
             topAppBar.title = getString(R.string.s_story, item.name)
-
             topAppBar.setNavigationIcon(R.drawable.baseline_arrow_back_24)
-            topAppBar.setNavigationOnClickListener {
-                finish()
-            }
+            topAppBar.setNavigationOnClickListener { finish() }
         }
     }
 

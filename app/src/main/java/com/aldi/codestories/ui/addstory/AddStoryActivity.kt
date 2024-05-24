@@ -30,12 +30,9 @@ import com.aldi.codestories.ui.addstory.CameraActivity.Companion.CAMERAX_RESULT
 class AddStoryActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAddStoryBinding
-
     private lateinit var storyViewModel: AddStoryViewModel
-
-    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(SESSION)
-
     private var currentImageUri: Uri? = null
+    private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(SESSION)
 
     private val requestPermissionLauncher =
         registerForActivityResult(
@@ -74,11 +71,8 @@ class AddStoryActivity : AppCompatActivity() {
     private fun setupToolbar() {
         with(binding) {
             topAppBar.title = getString(R.string.add_new_story)
-
             topAppBar.setNavigationIcon(R.drawable.baseline_arrow_back_24)
-            topAppBar.setNavigationOnClickListener {
-                finish()
-            }
+            topAppBar.setNavigationOnClickListener { finish() }
         }
     }
 

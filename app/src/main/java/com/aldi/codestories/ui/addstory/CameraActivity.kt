@@ -20,7 +20,6 @@ import com.aldi.codestories.utils.createCustomTempFile
 class CameraActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCameraBinding
-
     private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
