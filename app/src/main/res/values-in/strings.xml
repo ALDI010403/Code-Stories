@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Code Stories</string>
+
+    <string name="name">Nama</string>
+    <string name="password">Kata sandi</string>
+    <string name="email">Email</string>
+
+    <string name="login">MASUK</string>
+    <string name="login_title">Temukan kreativitas Anda dengan</string>
+    <string name="login_description">Selamat datang kembali, Anda telah dirindukan!</string>
+
+    <string name="sign_up">DAFTAR</string>
+    <string name="signup_title">Bergabunglah dengan %1$s hari ini dan keluarkan potensi bercerita Anda!</string>
+    <string name="signup_description">Buat akun agar Anda dapat menjelajahi cerita dari para coders</string>
+
+    <string name="login_to_signup">Belum punya akun? %1$s dan mulailah berbagi cerita Anda dengan kami!</string>
+    <string name="signup_now">Daftar Sekarang</string>
+    <string name="signup_to_login">Sudah memiliki akun? %1$s dan lanjutkan perjalanan bercerita Anda bersama kami!</string>
+    <string name="login_now">Masuk Sekarang</string>
+
+    <string name="empty_name">Silakan masukkan nama Anda untuk melanjutkan.</string>
+    <string name="empty_email">Silakan masukkan alamat email Anda untuk melanjutkan.</string>
+    <string name="empty_password">Silakan masukkan kata sandi Anda untuk melanjutkan.</string>
+
+    <string name="register_success">Selamat! Akun anda telah berhasil dibuat.</string>
+    <string name="register_message">Anda sekarang dapat masuk dan mulai menjelajahi platform kami. \n Tekan \'Lanjutkan\' untuk melanjutkan ke halaman login.</string>
+    <string name="continue_login">Kembali</string>
+
+    <string name="s_story">cerita %1$s \</string>
+    <string name="add_new_story">Tambahkan cerita baru</string>
+    <string name="settings">Pengaturam</string>
+    <string name="logout">Keluar</string>
+
+    <string name="language">Bahasa</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah</string>
+    <string name="choose_from_gallery">Pilih dari galeri</string>
+
+    <!-- Success condition -->
+    <string name="successfully_logged_in">Anda berhasil login. Selamat datang kembali!</string>
+    <string name="successfully_logged_out">Anda telah berhasil logout. Sampai jumpa lagi!</string>
+    <string name="permission_request_granted">Permintaan izin di ijinkan.</string>
+    <string name="successfully_take_pictures">Berhasil mengambil gambar</string>
+
+    <!-- Failed Condition  -->
+    <string name="not_available">Tidak tersedia</string>
+    <string name="story_not_available">Cerita tidak tersedia</string>
+    <string name="failed_to_load_data">Gaga mengambil data</string>
+    <string name="no_media_selected">Tida ada file yang di pilih</string>
+    <string name="permission_request_denied">Ijin di tolak</string>
+    <string name="failed_to_show_camera">Gagal menampilkan camera</string>
+    <string name="failed_to_take_pictures">Gagal mengambil gambar</string>
+    <string name="please_select_an_image_first">Pilih gambar</string>
+    <string name="passwords_must_have_at_least_8_characters">Kata sandi harus memiliki minimal 8 karakter.</string>
+    <string name="invalid_email_format">Email format tidak sesuai</string>
+
+    <!-- Content Description -->
+    <string name="navigation_and_actions">Navigasi dan tindakan</string>
+    <string name="upload_new_story">Unggah cerita baru</string>
+    <string name="no_stories_available">Tidak ada cerita yang tersedia</string>
+    <string name="list_of_stories">Daftar cerita</string>
+    <string name="preview_of_selected_image">Pratinjau gambar yang dipilih</string>
+    <string name="open_gallery_to_select_image">Buka galeri untuk memilih gambar</string>
+    <string name="take_photo_with_camera">Ambil foto dengan camera</string>
+    <string name="enter_description_for_the_image">Masukkan deskripsi untuk gambar</string>
+    <string name="upload_the_selected_image">Unggah gambar yang dipilih</string>
+    <string name="camera_preview">Pratinjau kamera</string>
+    <string name="capture_image">Mengambil gambar</string>
+    <string name="switch_camera">Ganti kamera</string>
+    <string name="story_image">Foto cerita</string>
+    <string name="story_name">Nama cerita</string>
+    <string name="story_date">Tanggal cerita</string>
+    <string name="story_description">Deskripsi cerita</string>
+    <string name="title_of_login">Judul masuk</string>
+    <string name="description_of_login">Deskripsi masuk</string>
+    <string name="email_input_field">Masukan email</string>
+    <string name="password_input_field">Masukan kata sandi</string>
+    <string name="login_button">Tombol masuk</string>
+    <string name="register_button">Tombol daftar</string>
+    <string name="title_of_signup">Judul daftar</string>
+    <string name="description_of_signup">Deskripsi daftar</string>
+    <string name="sign_up_button">Tombol daftar</string>
+    <string name="change_language">Ganti bahasa</string>
+    <string name="welcome_main">Temukan teman di Code Stories</string>
+    <string name="welcome_seccond">Jelajahi cerita kode, temukan cerita menarik dari teman coders</string>
+    <string name="copyright">Code Stories 2024</string>
+</resources>

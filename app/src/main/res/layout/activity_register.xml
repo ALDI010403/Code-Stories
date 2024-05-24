@@ -189,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:fontFamily="@font/poppinsbold"
-        android:text="Create account"
+        android:text="@string/signup_now"
         android:textColor="?attr/colorPrimary"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
