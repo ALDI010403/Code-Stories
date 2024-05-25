@@ -124,10 +124,6 @@ class StoryRepository private constructor(
         private const val TAG = "StoryRepository"
         private var instance: StoryRepository? = null
 
-        fun getInstance(apiService: ApiService, userPreference: UserPreference): StoryRepository {
-            return instance ?: synchronized(this) {
-                instance ?: StoryRepository(apiService, userPreference).also { instance = it }
-            }
-        }
+        fun getInstance(apiService: ApiService, userPreference: UserPreference) = StoryRepository(apiService, userPreference)
     }
 }
