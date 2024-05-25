@@ -27,17 +27,15 @@ class SplashScreenActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
 
-        // Initialize UserPreference
+
         userPreference = UserPreference.getInstance(dataStore)
 
-        // Check if the user is already logged in
+
         lifecycleScope.launch {
             val isLoggedIn = userPreference.isLoggedIn().first()
             if (isLoggedIn) {
-                // Navigate to the main activity directly
                 startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
             } else {
-                // Navigate to the welcome activity
                 startActivity(Intent(this@SplashScreenActivity, WelcomeActivity::class.java))
             }
             finish()

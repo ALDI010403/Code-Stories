@@ -31,14 +31,13 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         supportActionBar?.hide()
 
-        // Initialize UserPreference
+
         userPreference = UserPreference.getInstance(dataStore)
 
-        // Check if the user is already logged in
+
         lifecycleScope.launch {
             val isLoggedIn = userPreference.isLoggedIn().first()
             if (isLoggedIn) {
-                // Navigate to the main activity directly
                 startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
                 finish()
             } else {
