@@ -3,12 +3,13 @@ package com.aldi.codestories
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.di.Injection
 import com.aldi.codestories.repository.StoryRepository
 import com.aldi.codestories.viewmodel.addstory.AddStoryViewModel
 import com.aldi.codestories.viewmodel.login.LoginViewModel
 import com.aldi.codestories.viewmodel.main.MainViewModel
+import com.aldi.codestories.viewmodel.maps.MapsViewModel
 import com.aldi.codestories.viewmodel.register.RegisterViewModel
 
 class ViewModelFactory private constructor(
@@ -26,6 +27,8 @@ class ViewModelFactory private constructor(
             return RegisterViewModel(repository) as T
         } else if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
             return LoginViewModel(repository, pref) as T
+        } else if (modelClass.isAssignableFrom(MapsViewModel::class.java)) {
+            return MapsViewModel(repository) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }

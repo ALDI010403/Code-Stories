@@ -2,7 +2,7 @@ package com.aldi.codestories.viewmodel.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.repository.StoryRepository
 import kotlinx.coroutines.launch
 

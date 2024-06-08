@@ -24,7 +24,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.aldi.codestories.R
 import com.aldi.codestories.ViewModelFactory
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.databinding.ActivityLoginBinding
 import com.aldi.codestories.repository.Result
 import com.aldi.codestories.ui.main.MainActivity

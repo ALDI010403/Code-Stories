@@ -23,7 +23,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.aldi.codestories.R
 import com.aldi.codestories.ViewModelFactory
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.databinding.ActivityRegisterBinding
 import com.aldi.codestories.ui.login.LoginActivity
 import com.aldi.codestories.viewmodel.register.RegisterViewModel

@@ -12,7 +12,7 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.lifecycleScope
 import com.aldi.codestories.R
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.ui.login.LoginActivity
 import com.aldi.codestories.ui.main.MainActivity
 import com.aldi.codestories.ui.register.RegisterActivity
