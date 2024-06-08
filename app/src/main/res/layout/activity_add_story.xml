@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/rounded_edit_text_background"
             android:gravity="top|start"
@@ -101,8 +101,23 @@
             android:minLines="8"
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/galleryButton" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/share_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="?attr/backgroundColor"
+            android:text="@string/share_location"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
 
         <Button
             android:id="@+id/uploadButton"
@@ -114,11 +129,11 @@
             android:background="@drawable/button_background"
             android:padding="8dp"
             android:text="@string/upload"
-            android:textColor="?attr/colorOnSecondary"
             android:textSize="16sp"
+            android:textColor="?attr/colorOnSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionEditText" />
+            app:layout_constraintTop_toBottomOf="@+id/share_location" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

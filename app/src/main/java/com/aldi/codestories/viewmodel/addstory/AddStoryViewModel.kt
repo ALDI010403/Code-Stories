@@ -6,6 +6,7 @@ import java.io.File
 
 class AddStoryViewModel(private val repository: StoryRepository): ViewModel() {
 
-    fun uploadNewStory(file: File?, description: String) = repository.uploadNewStory(file, description)
+    fun uploadNewStory(file: File?, description: String, lat: Double?, lon: Double?) =
+        repository.uploadNewStory(file, description, lat, lon)
 
 }

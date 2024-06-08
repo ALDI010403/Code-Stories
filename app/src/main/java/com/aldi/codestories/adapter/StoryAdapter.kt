@@ -2,15 +2,15 @@ package com.aldi.codestories.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.aldi.codestories.databinding.ItemStoryBinding
 import com.aldi.codestories.response.ListStoryItem
 import com.aldi.codestories.utils.withDateFormat
 import com.bumptech.glide.Glide
 
-class StoryAdapter : ListAdapter<ListStoryItem, StoryAdapter.ListViewHolder>(DIFF_CALLBACK) {
+class StoryAdapter : PagingDataAdapter<ListStoryItem, StoryAdapter.ListViewHolder>(DIFF_CALLBACK) {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
