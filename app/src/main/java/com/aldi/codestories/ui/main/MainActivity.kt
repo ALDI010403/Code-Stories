@@ -11,19 +11,23 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
+import androidx.paging.PagingData
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.aldi.codestories.R
 import com.aldi.codestories.ViewModelFactory
 import com.aldi.codestories.adapter.StoryAdapter
-import com.aldi.codestories.data.local.UserPreference
+import com.aldi.codestories.data.local.pref.UserPreference
 import com.aldi.codestories.databinding.ActivityMainBinding
 import com.aldi.codestories.ui.addstory.AddStoryActivity
 import com.aldi.codestories.ui.detail.DetailStoryActivity
 import com.aldi.codestories.ui.login.LoginActivity
+import com.aldi.codestories.ui.maps.MapsActivity
+import com.aldi.codestories.ui.setting.SettingActivity
 import com.aldi.codestories.viewmodel.main.MainViewModel
 import com.aldi.codestories.repository.Result
 import com.aldi.codestories.response.ListStoryItem
-import com.aldi.codestories.ui.setting.SettingActivity
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -66,6 +70,10 @@ class MainActivity : AppCompatActivity() {
                         logout()
                         true
                     }
+                    R.id.menuMaps -> {
+                        moveToMaps()
+                        true
+                    }
                     else -> false
                 }
             }
@@ -99,7 +107,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun observeStories() {
-        mainViewModel.getAllStories().observe(this) { result ->
+        mainViewModel.stories.observe(this@MainActivity) { result ->
             when (result) {
                 is Result.Loading -> showLoading(true)
                 is Result.Success -> handleSuccess(result.data)
@@ -108,15 +116,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun handleSuccess(stories: List<ListStoryItem>) {
+    private fun handleSuccess(pagingData: PagingData<ListStoryItem>) {
         showLoading(false)
-        if (stories.isEmpty()) {
-            binding.rvStories.visibility = View.GONE
-            binding.storyNotAvailable.visibility = View.VISIBLE
-        } else {
-            binding.rvStories.visibility = View.VISIBLE
-            binding.storyNotAvailable.visibility = View.GONE
-            storyAdapter.submitList(stories)
+        lifecycleScope.launch {
+            storyAdapter.submitData(pagingData)
         }
     }
 
@@ -140,6 +143,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this, SettingActivity::class.java))
     }
 
+    private fun moveToMaps() {
+        startActivity(Intent(this, MapsActivity::class.java))
+    }
+
     private fun logout() {
         mainViewModel.logout()
         showToast(getString(R.string.successfully_logged_out))
@@ -160,11 +167,6 @@ class MainActivity : AppCompatActivity() {
             activity.application, UserPreference.getInstance(dataStore)
         )
         return ViewModelProvider(activity, factory)[MainViewModel::class.java]
-    }
-
-    override fun onResume() {
-        super.onResume()
-        observeStories()
     }
 
     companion object {

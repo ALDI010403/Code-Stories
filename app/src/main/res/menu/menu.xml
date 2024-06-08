@@ -11,4 +11,9 @@
         android:title="@string/logout"
         android:icon="@drawable/baseline_logout_24"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menuMaps"
+        android:title="@string/maps"
+        android:icon="@drawable/ic_map_24"
+        app:showAsAction="ifRoom"/>
 </menu>

@@ -84,4 +84,12 @@
     <string name="welcome_main">Find your friends on Code Stories</string>
     <string name="welcome_seccond">Explore code stories find interesting stories from coder friends</string>
     <string name="copyright">Code Stories 2024</string>
+    //maps
+    <string name="maps">maps</string>
+    <string name="maps_activity">maps</string>
+    <string name="share_location">share location</string>
+    <string name="location_not_found">location not found</string>
+    <string name="permission_denied">permission denied</string>
+    <string name="enable_location">enable location</string>
+    <string name="retry">retry</string>
 </resources>
